@@ -6,6 +6,45 @@
   margin: 0;
 }
 
+.btn {
+  display: flex;
+  align-items: center;
+  height: 38px;
+  padding: 0 30px;
+  border-radius: 4px;
+  gap: 12px;
+  color: white;
+  background: #8DD83D;
+  border: 1px solid;
+}
+
+.btn-big {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 30px;
+  border-radius: 4px;
+  gap: 12px;
+  color: white;
+  background: #8DD83D;
+}
+.btn-big.black {
+  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+}
+
 header {
+  display: flex;
+  justify-content: space-between;
   padding: 20px 50px;
+  border-radius: 4px;
+  background-color: #373A3C;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav .nav-link + .nav-link {
+  margin-left: 50px;
 }/*# sourceMappingURL=main.css.map */
