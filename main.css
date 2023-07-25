@@ -35,6 +35,7 @@
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 50px;
   border-radius: 4px;
   background-color: #373A3C;
@@ -47,4 +48,47 @@ nav {
 }
 nav .nav-link + .nav-link {
   margin-left: 50px;
+}
+nav .active {
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.search-txt {
+  border-radius: 4px;
+  border: 1px solid #CCCCCC;
+  width: 209.795px;
+  height: 38px;
+}
+
+.hero-control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-basis: 50%;
+}
+
+#hero h1 {
+  font-size: 36px;
+  line-height: normal;
+}
+#hero h2 {
+  font-size: 24px;
+  line-height: normal;
+}
+#hero p {
+  height: 100px;
+  width: 390px;
 }/*# sourceMappingURL=main.css.map */

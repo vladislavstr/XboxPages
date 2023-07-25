@@ -2,6 +2,7 @@ $accent-color:#8DD83D;
 $header-background-color: #373A3C;
 $all-border-radius: 4px;
 
+
 * {
     src: url(fonts/HelveticaNeue-Thin.otf) format("truetype");
     font-family: 'Helvetica Neue';
@@ -44,6 +45,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 50px;
     border-radius: $all-border-radius;
     background-color: $header-background-color;
@@ -57,4 +59,35 @@ nav {
     .nav-link + .nav-link {
         margin-left: 50px;
     }
+
+    .active{
+        color: #FFF;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.search-txt {
+    border-radius: $all-border-radius;
+    border: 1px solid #CCCCCC;
+    width: 209.795px;
+    height: 38px;
+}
+
+.hero-control{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-basis: 50%;
 }
