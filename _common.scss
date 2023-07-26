@@ -66,18 +66,27 @@ nav {
 }
 
 a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
+    gap: 7px;
     color: rgba(255, 255, 255, 0.50);
 }
 
 .search-txt {
     border-radius: $all-border-radius;
     border: 1px solid #CCCCCC;
+    font-size: 16px;
+    padding: 0 16px;
     width: 209.795px;
     height: 38px;
+}
+
+.hero-background-image{
+    display: block;
 }
 
 .hero-control{
