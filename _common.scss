@@ -15,6 +15,11 @@ $background-color-1: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 10
 
     box-sizing: border-box;
     margin: 0;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+body{
+    padding-top: 60px;
 }
 
 .btn {
@@ -52,9 +57,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 11px 170px;
     border-radius: $all-border-radius;
     background-color: $header-background-color;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 nav {
@@ -106,12 +116,13 @@ nav {
 .hero-background-image{
     position: absolute;
     top: 3px;
-    // display: block;
+    display: block;
 }
 
 .hero-control{
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .hero-content{

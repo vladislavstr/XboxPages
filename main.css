@@ -4,6 +4,11 @@
   font-weight: normal;
   box-sizing: border-box;
   margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  padding-top: 60px;
 }
 
 .btn {
@@ -39,9 +44,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 11px 170px;
   border-radius: 4px;
   background-color: #373A3C;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 nav {
@@ -86,11 +95,13 @@ nav .nav-link + .nav-link {
 .hero-background-image {
   position: absolute;
   top: 3px;
+  display: block;
 }
 
 .hero-control {
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .hero-content {
