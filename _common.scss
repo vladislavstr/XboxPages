@@ -2,6 +2,11 @@ $accent-color:#8DD83D;
 $header-background-color: #373A3C;
 $all-border-radius: 4px;
 
+$background-color-0: #FFF;
+// $background-color-1: url(<path-to-image>), lightgray 0% 0% / 35.49107015132904px 35.49107015132904px repeat;
+$btn-inactive-color: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+$background-color-1: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+// background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
 
 * {
     src: url(fonts/HelveticaNeue-Thin.otf) format("truetype");
@@ -10,10 +15,6 @@ $all-border-radius: 4px;
 
     box-sizing: border-box;
     margin: 0;
-}
-
-body {
-    
 }
 
 .btn {
@@ -26,6 +27,10 @@ body {
     color: white;
     background: $accent-color;
     border: 1px solid;
+
+    &.inactive {
+        background: $btn-inactive-color;
+    }
 }
 
 .btn-big {
@@ -37,8 +42,9 @@ body {
     gap: 12px;
     color: white;
     background: $accent-color;
-    &.black {
-        background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+    
+    &.inactive {
+        background: $btn-inactive-color;
     }
 }
 
@@ -59,13 +65,9 @@ nav {
     .nav-link + .nav-link {
         margin-left: 50px;
     }
-
-    .active{
-        color: #FFF;
-    }
 }
 
-a {
+.nav-link {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -74,7 +76,16 @@ a {
     line-height: 16px;
     gap: 7px;
     color: rgba(255, 255, 255, 0.50);
+
+    &.active{
+        color: #FFF;
+    }
 }
+
+// .line {
+//     height: 3px;
+//     color: #777;
+// }
 
 .search-txt {
     border-radius: $all-border-radius;
@@ -85,8 +96,17 @@ a {
     height: 38px;
 }
 
+.hero-action{
+    background: $background-color-1;
+    position: relative;
+    bottom: 3px;
+    height: 648px;
+}
+
 .hero-background-image{
-    display: block;
+    position: absolute;
+    top: 3px;
+    // display: block;
 }
 
 .hero-control{

@@ -17,6 +17,9 @@
   background: #8DD83D;
   border: 1px solid;
 }
+.btn.inactive {
+  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+}
 
 .btn-big {
   display: flex;
@@ -28,7 +31,7 @@
   color: white;
   background: #8DD83D;
 }
-.btn-big.black {
+.btn-big.inactive {
   background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
 }
 
@@ -49,11 +52,8 @@ nav {
 nav .nav-link + .nav-link {
   margin-left: 50px;
 }
-nav .active {
-  color: #FFF;
-}
 
-a {
+.nav-link {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -62,6 +62,9 @@ a {
   line-height: 16px;
   gap: 7px;
   color: rgba(255, 255, 255, 0.5);
+}
+.nav-link.active {
+  color: #FFF;
 }
 
 .search-txt {
@@ -73,8 +76,16 @@ a {
   height: 38px;
 }
 
+.hero-action {
+  background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+  position: relative;
+  bottom: 3px;
+  height: 648px;
+}
+
 .hero-background-image {
-  display: block;
+  position: absolute;
+  top: 3px;
 }
 
 .hero-control {
