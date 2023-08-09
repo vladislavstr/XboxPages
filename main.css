@@ -86,6 +86,9 @@ nav .nav-link + .nav-link {
 }
 
 .hero-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
   position: relative;
   bottom: 3px;
@@ -101,6 +104,7 @@ nav .nav-link + .nav-link {
 .hero-control {
   display: flex;
   justify-content: space-between;
+  position: relative;
   z-index: 1;
 }
 
@@ -111,6 +115,22 @@ nav .nav-link + .nav-link {
   flex-basis: 50%;
 }
 
+@media (min-width: 851px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+@media (max-width: 850px) {
+  .mobile-only {
+    display: none !important;
+  }
+  header {
+    padding: 15px 30px;
+  }
+  header .logo {
+    width: 10px;
+  }
+}
 #hero h1 {
   font-size: 36px;
   line-height: normal;

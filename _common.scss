@@ -18,7 +18,7 @@ $background-color-1: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 10
     color: rgba(255, 255, 255, 0.50);
 }
 
-body{
+body {
     padding-top: 60px;
 }
 
@@ -106,28 +106,55 @@ nav {
     height: 38px;
 }
 
-.hero-action{
+.hero-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: $background-color-1;
     position: relative;
     bottom: 3px;
     height: 648px;
 }
 
-.hero-background-image{
+.hero-background-image {
     position: absolute;
     top: 3px;
     display: block;
 }
 
-.hero-control{
+.hero-control {
     display: flex;
     justify-content: space-between;
+    position: relative;
     z-index: 1;
 }
 
-.hero-content{
+.hero-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     flex-basis: 50%;
+}
+
+@media (min-width: 851px) {
+    .desktop-only {
+        display: none !important;
+    }
+    
+    // header {
+    //     background-color: red;
+    // }
+}
+
+@media (max-width: 850px) {
+    .mobile-only {
+        display: none !important;
+    }
+    header {
+        padding: 15px 30px;
+
+        .logo {
+            width: 10px;
+        }
+    }
 }
