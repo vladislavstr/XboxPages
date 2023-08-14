@@ -18,10 +18,8 @@ body {
   height: 38px;
   padding: 0 30px;
   border-radius: 4px;
-  gap: 12px;
   color: white;
   background: #8DD83D;
-  border: 1px solid;
 }
 .btn.inactive {
   background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
@@ -29,19 +27,19 @@ body {
 
 .btn-big {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 278px;
   height: 60px;
   padding: 22 30px;
   border-radius: 4px;
-  gap: 12px;
   color: white;
   background: #8DD83D;
 }
 .btn-big.inactive {
   background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+  width: 207px;
+  height: 53px;
 }
 
 .card {
@@ -222,6 +220,17 @@ nav .nav-link + .nav-link {
   position: relative;
   z-index: 1;
 }
+.games-control .btn-big {
+  margin-top: 85px;
+}
+
+.games-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 97px;
+  margin-bottom: 54px;
+}
 
 .games-content {
   display: flex;
@@ -306,6 +315,12 @@ nav .nav-link + .nav-link {
   max-width: 278px;
 }
 
+#games .games-title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 #games .card-content p {
   font-size: 21px;
   font-style: normal;
