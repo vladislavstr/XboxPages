@@ -145,8 +145,8 @@ nav {
     flex-direction: column;
     align-items: center;
     background: $background-color-1;
-    // position: relative;
-    // bottom: 3px;
+    position: relative;
+    bottom: 3px;
     height: 865px;
 }
 
@@ -155,6 +155,28 @@ nav {
     flex-direction: row;
     align-items: center;
     gap: 64px;
+}
+
+.games-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $background-color-1;
+    position: relative;
+    bottom: 3px;
+    height: 865px;
+}
+
+.games-background-image {
+    position: absolute;
+    display: block;
+}
+
+.games-control {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
 }
 
 @media (min-width: 851px) {

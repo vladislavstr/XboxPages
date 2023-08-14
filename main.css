@@ -128,6 +128,8 @@ nav .nav-link + .nav-link {
   flex-direction: column;
   align-items: center;
   background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+  position: relative;
+  bottom: 3px;
   height: 865px;
 }
 
@@ -136,6 +138,28 @@ nav .nav-link + .nav-link {
   flex-direction: row;
   align-items: center;
   gap: 64px;
+}
+
+.games-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+  position: relative;
+  bottom: 3px;
+  height: 865px;
+}
+
+.games-background-image {
+  position: absolute;
+  display: block;
+}
+
+.games-control {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 851px) {
