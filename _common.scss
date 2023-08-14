@@ -68,8 +68,6 @@ body {
     border-radius: 4px;
     border: 1px solid $accent-color;
     background: #FFF;
-
-    color: #435766;
 }
 
 .card-img {
@@ -80,7 +78,13 @@ body {
     overflow: hidden;
 }
 
-.card-title {
+.card-content {
+    .card-title {
+        color: #435766;
+    }
+    p {
+        color: #435766;
+    }
 }
 
 header {

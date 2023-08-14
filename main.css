@@ -53,7 +53,6 @@ body {
   border-radius: 4px;
   border: 1px solid #8DD83D;
   background: #FFF;
-  color: #435766;
 }
 
 .card-img {
@@ -62,6 +61,13 @@ body {
   border-radius: 4px;
   background: #FAFAFA;
   overflow: hidden;
+}
+
+.card-content .card-title {
+  color: #435766;
+}
+.card-content p {
+  color: #435766;
 }
 
 header {
