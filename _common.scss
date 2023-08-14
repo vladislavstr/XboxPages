@@ -25,6 +25,7 @@ body {
 .btn {
     display: flex;
     align-items: center;
+    align-content: center;
     height: 38px;
     padding: 0 30px;
     border-radius: $all-border-radius;
@@ -40,7 +41,10 @@ body {
 
 .btn-big {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 278px;
     height: 60px;
     padding: 22 30px;
     border-radius: 4px;
@@ -54,12 +58,29 @@ body {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     width: 320px;
     height: 420px;
     
     border-radius: 4px;
     border: 1px solid $accent-color;
     background: #FFF;
+
+    color: #435766;
+}
+
+.card-img {
+    width: 318px;
+    height: 180px;
+    border-radius: 4px;
+    background: #FAFAFA;
+    overflow: hidden;
+}
+
+.card-title {
 }
 
 header {
@@ -164,7 +185,8 @@ nav {
     background: $background-color-1;
     position: relative;
     bottom: 3px;
-    height: 865px;
+    width: 1400px;
+    height: 880px;
 }
 
 .games-background-image {
@@ -174,9 +196,17 @@ nav {
 
 .games-control {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     z-index: 1;
+}
+
+.games-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
 }
 
 @media (min-width: 851px) {
