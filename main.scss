@@ -18,10 +18,51 @@
 }
 
 #highlights {
+    .highlights-title {
+        margin-bottom: 43px;
 
+        h1 {
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    .card-content {
+        p {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            margin-top: 13px;
+            max-width: 278px;
+
+        }
+    }
 }
 
 #games {
+    .card-content {
+        p {
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            margin-top: 16px;
+            max-width: 278px;
+            
+        }
+    }
 
 }
 

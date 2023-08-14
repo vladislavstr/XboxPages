@@ -55,23 +55,44 @@ body {
   background: #FFF;
   overflow: hidden;
 }
+.card .btn-big {
+  margin-bottom: 27px;
+}
 
 .card-img {
-  width: 318px;
+  width: 100%;
   height: 180px;
   background: #FAFAFA;
   display: flex;
-  align-content: center;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
+.card-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-height: 240px;
+}
+
+.card-content {
+  margin-top: 22px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .card-content .card-title {
   color: #435766;
 }
 .card-content p {
   color: #435766;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 header {
@@ -133,6 +154,7 @@ nav .nav-link + .nav-link {
   position: absolute;
   top: 3px;
   display: block;
+  width: 100%;
 }
 
 .hero-control {
@@ -177,9 +199,20 @@ nav .nav-link + .nav-link {
   height: 880px;
 }
 
+.highlights-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.highlights-title .icon {
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+
 .games-background-image {
   position: absolute;
   display: block;
+  width: 1400px;
 }
 
 .games-control {
@@ -247,6 +280,39 @@ nav .nav-link + .nav-link {
 #hero p {
   height: 100px;
   width: 390px;
+}
+
+#highlights .highlights-title {
+  margin-bottom: 43px;
+}
+#highlights .highlights-title h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#highlights .highlights-title h2 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#highlights .card-content p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 13px;
+  max-width: 278px;
+}
+
+#games .card-content p {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 16px;
+  max-width: 278px;
 }
 
 footer {
