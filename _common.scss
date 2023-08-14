@@ -68,13 +68,20 @@ body {
     border-radius: 4px;
     border: 1px solid $accent-color;
     background: #FFF;
+
+    overflow: hidden;
 }
 
 .card-img {
     width: 318px;
     height: 180px;
-    border-radius: 4px;
     background: #FAFAFA;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center; 
+    
     overflow: hidden;
 }
 
