@@ -197,6 +197,29 @@ nav .nav-link + .nav-link {
   gap: 30px;
 }
 
+.design-lab-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+  position: relative;
+  bottom: 3px;
+  width: 1400px;
+  height: 880px;
+}
+
+.design-lab-background-image {
+  position: absolute;
+  display: block;
+}
+
+.design-lab-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
 @media (min-width: 851px) {
   .desktop-only {
     display: none !important;
