@@ -16,7 +16,6 @@ body {
   align-items: center;
   align-content: center;
   height: 38px;
-  padding: 0 30px;
   border-radius: 4px;
   color: white;
   background: #8DD83D;
@@ -31,7 +30,6 @@ body {
   justify-content: center;
   width: 278px;
   height: 60px;
-  padding: 22 30px;
   border-radius: 4px;
   color: white;
   background: #8DD83D;
@@ -65,6 +63,10 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+.card-img .icon {
+  width: 320px;
+  height: 100%;
 }
 
 .card-action {
@@ -148,6 +150,16 @@ nav .nav-link + .nav-link {
   height: 648px;
 }
 
+.highlights-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.highlights-title .icon {
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+
 .hero-background-image {
   position: absolute;
   top: 3px;
@@ -197,20 +209,11 @@ nav .nav-link + .nav-link {
   height: 880px;
 }
 
-.highlights-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.highlights-title .icon {
-  margin-top: 64px;
-  margin-bottom: 16px;
-}
-
 .games-background-image {
   position: absolute;
   display: block;
   width: 1400px;
+  height: 100%;
 }
 
 .games-control {
@@ -219,9 +222,6 @@ nav .nav-link + .nav-link {
   align-items: center;
   position: relative;
   z-index: 1;
-}
-.games-control .btn-big {
-  margin-top: 85px;
 }
 
 .games-title {
@@ -247,12 +247,14 @@ nav .nav-link + .nav-link {
   position: relative;
   bottom: 3px;
   width: 1400px;
-  height: 880px;
+  height: 480px;
 }
 
 .design-lab-background-image {
   position: absolute;
   display: block;
+  width: 1400px;
+  height: 100%;
 }
 
 .design-lab-content {
