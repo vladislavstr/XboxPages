@@ -2,6 +2,7 @@
   src: url(fonts/HelveticaNeue-Thin.otf) format("truetype");
   font-family: "Helvetica Neue";
   font-weight: 400;
+  text-decoration: none;
   box-sizing: border-box;
   margin: 0;
   color: #FFFFFF;
@@ -53,12 +54,12 @@ body {
 }
 
 .card-img {
-  width: 100%;
-  height: 180px;
-  background: #FAFAFA;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 180px;
+  background: #FAFAFA;
   overflow: hidden;
 }
 .card-img .icon {
@@ -77,9 +78,6 @@ body {
 .card-content {
   margin-top: 22px;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 .card-content .card-title {
   color: #435766;
@@ -87,9 +85,6 @@ body {
 .card-content p {
   color: #435766;
   font-size: 21px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 header {
@@ -97,9 +92,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 11px 170px;
+  min-width: 1400px;
   border-radius: 4px;
   background-color: #373A3C;
-  min-width: 1400px;
   position: absolute;
   left: 0;
   right: 0;
@@ -119,40 +114,35 @@ nav .nav-link + .nav-link {
 .nav-link {
   display: flex;
   align-items: center;
-  text-decoration: none;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
   gap: 7px;
-  color: rgba(255, 255, 255, 0.5);
 }
-.nav-link.active {
-  color: #FFF;
+.nav-link.nonactive {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .search-txt {
+  width: 209.795px;
+  height: 38px;
+  padding: 0 16px;
   border-radius: 4px;
   border: 1px solid #CCCCCC;
   font-size: 16px;
-  padding: 0 16px;
-  width: 209.795px;
-  height: 38px;
 }
 
 .hero-action {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 648px;
   background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
   position: relative;
   bottom: 3px;
-  height: 648px;
 }
 
 .hero-background-image {
   position: absolute;
   top: 3px;
-  display: block;
   width: 100%;
 }
 
@@ -178,16 +168,16 @@ nav .nav-link + .nav-link {
   display: flex;
   gap: 13px;
 }
-.hero-content .aaa {
+.hero-content .hero-content-offset {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
 }
-.hero-content .aaa .btn {
+.hero-content .hero-content-offset .btn {
   width: 136px;
   height: 38px;
 }
-.hero-content .aaa .btn.inactive {
+.hero-content .hero-content-offset .btn.inactive {
   width: 146px;
 }
 
@@ -195,10 +185,9 @@ nav .nav-link + .nav-link {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 865px;
   background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
   position: relative;
-  bottom: 3px;
-  height: 865px;
 }
 
 .highlights-title {
@@ -222,16 +211,14 @@ nav .nav-link + .nav-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
-  position: relative;
-  bottom: 3px;
   width: 1400px;
   height: 880px;
+  background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+  position: relative;
 }
 
 .games-background-image {
   position: absolute;
-  display: block;
   width: 1400px;
   height: 100%;
 }
@@ -250,9 +237,9 @@ nav .nav-link + .nav-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   margin-top: 97px;
   margin-bottom: 54px;
-  width: 100%;
 }
 .games-title img {
   margin: 0 55px;
@@ -274,17 +261,14 @@ nav .nav-link + .nav-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
-  position: relative;
-  bottom: 3px;
   width: 1400px;
   height: 480px;
+  background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+  position: relative;
 }
 
 .design-lab-background-image {
   position: absolute;
-  display: block;
-  width: 1400px;
   height: 100%;
 }
 
