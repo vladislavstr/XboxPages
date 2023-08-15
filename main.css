@@ -1,7 +1,7 @@
 * {
   src: url(fonts/HelveticaNeue-Thin.otf) format("truetype");
   font-family: "Helvetica Neue";
-  font-weight: normal;
+  font-weight: 400;
   box-sizing: border-box;
   margin: 0;
   color: #FFFFFF;
@@ -15,8 +15,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
   background: #8DD83D;
+  border-radius: 4px;
 }
 .btn.inactive {
   background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
@@ -28,8 +28,8 @@ body {
   justify-content: center;
   width: 278px;
   height: 60px;
-  border-radius: 4px;
   background: #8DD83D;
+  border-radius: 4px;
 }
 .btn-big.inactive {
   background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
@@ -41,12 +41,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
   width: 320px;
   height: 420px;
+  background: #FFF;
   border-radius: 4px;
   border: 1px solid #8DD83D;
-  background: #FFF;
-  overflow: hidden;
 }
 .card .btn-big {
   margin-bottom: 27px;
@@ -295,6 +295,11 @@ nav .nav-link + .nav-link {
   gap: 30px;
 }
 
+footer {
+  width: 1400px;
+  height: 395px;
+}
+
 @media (min-width: 851px) {
   .desktop-only {
     display: none !important;
@@ -313,11 +318,9 @@ nav .nav-link + .nav-link {
 }
 #hero h1 {
   font-size: 36px;
-  line-height: normal;
 }
 #hero h2 {
   font-size: 24px;
-  line-height: normal;
 }
 #hero p {
   height: 100px;
@@ -329,41 +332,21 @@ nav .nav-link + .nav-link {
 }
 #highlights .highlights-title h1 {
   font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 #highlights .highlights-title h2 {
   font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 #highlights .card-content p {
   font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   margin-top: 13px;
   max-width: 278px;
 }
 
 #games .games-title h1 {
   font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 #games .card-content p {
   font-size: 21px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   margin-top: 16px;
   max-width: 278px;
-}
-
-footer {
-  width: 1400px;
-  height: 395px;
 }/*# sourceMappingURL=main.css.map */
