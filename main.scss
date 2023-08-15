@@ -13,7 +13,7 @@
 
     p {
         height: 100px;
-        width: 390px;
+        max-width: 300px;
     }
 }
 
@@ -52,10 +52,12 @@
 
 #games {
     .games-title {
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        h1{
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
 
     }
 

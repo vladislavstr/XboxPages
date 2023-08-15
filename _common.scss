@@ -15,7 +15,8 @@ $background-color-1: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 10
 
     box-sizing: border-box;
     margin: 0;
-    color: rgba(255, 255, 255, 0.50);
+    color: #FFFFFF;
+    // color: rgba(255, 255, 255, 0.50);
 }
 
 body {
@@ -29,7 +30,7 @@ body {
     // height: 38px;
     // padding: 0 30px;
     border-radius: $all-border-radius;
-    color: #FFF;;
+    // color: #FFF;
     background: $accent-color;
 
     &.inactive {
@@ -45,7 +46,7 @@ body {
     height: 60px;
     // padding: 22 30px;
     border-radius: $all-border-radius;;
-    color: white;
+    // color: white;
     background: $accent-color;
     
     &.inactive {
@@ -276,19 +277,30 @@ nav {
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 1;
 
-    // .btn-big {
-    //     margin-top: 85px;
-    // }
+    .lower-section {
+        margin-top: 85px;
+    }
 }
 
 .games-title {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     margin-top: 97px;
     margin-bottom: 54px;
+    width: 100%;
+
+    img {
+        margin: 0 55px;
+        width: 21px;
+    }
+
+    .nonactive {
+        position: relative;
+         z-index: -1;
+    }
+    
 }
 
 .games-content{

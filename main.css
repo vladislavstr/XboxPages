@@ -4,7 +4,7 @@
   font-weight: normal;
   box-sizing: border-box;
   margin: 0;
-  color: rgba(255, 255, 255, 0.5);
+  color: #FFFFFF;
 }
 
 body {
@@ -16,7 +16,6 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  color: #FFF;
   background: #8DD83D;
 }
 .btn.inactive {
@@ -30,7 +29,6 @@ body {
   width: 278px;
   height: 60px;
   border-radius: 4px;
-  color: white;
   background: #8DD83D;
 }
 .btn-big.inactive {
@@ -243,15 +241,26 @@ nav .nav-link + .nav-link {
   flex-direction: column;
   align-items: center;
   position: relative;
-  z-index: 1;
+}
+.games-control .lower-section {
+  margin-top: 85px;
 }
 
 .games-title {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   margin-top: 97px;
   margin-bottom: 54px;
+  width: 100%;
+}
+.games-title img {
+  margin: 0 55px;
+  width: 21px;
+}
+.games-title .nonactive {
+  position: relative;
+  z-index: -1;
 }
 
 .games-content {
@@ -312,7 +321,7 @@ nav .nav-link + .nav-link {
 }
 #hero p {
   height: 100px;
-  width: 390px;
+  max-width: 300px;
 }
 
 #highlights .highlights-title {
@@ -339,7 +348,7 @@ nav .nav-link + .nav-link {
   max-width: 278px;
 }
 
-#games .games-title {
+#games .games-title h1 {
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
