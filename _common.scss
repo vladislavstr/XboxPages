@@ -20,6 +20,16 @@ $header-background-color: #373A3C;
 
 body {
     padding-top: 60px;
+    background: $background-color-1;
+}
+
+.main {
+    max-width: 1920px;
+}
+
+.line {
+    width: 100%;
+    background: #777777;
 }
 
 .btn {
@@ -113,21 +123,31 @@ body {
     }
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 11px 170px;
-    min-width: 1400px;
-
-    border-radius: $all-border-radius;
-    background-color: $header-background-color;
-
-    position: absolute;
+header{
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
+    z-index: 2;
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        padding: 11px 170px;
+        min-width: 1400px;
+    
+        border-radius: $all-border-radius;
+        background-color: $header-background-color;
+    }
+
+    .line {
+        height: 3px;
+    
+        position: relative;
+        bottom: 3px;
+    }
 }
 
 nav {
@@ -176,6 +196,7 @@ nav {
     
     position: relative;
     bottom: 3px;
+    // z-index: 1;
 }
 
 .hero-background-image {

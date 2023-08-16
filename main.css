@@ -10,6 +10,16 @@
 
 body {
   padding-top: 60px;
+  background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+}
+
+.main {
+  max-width: 1920px;
+}
+
+.line {
+  width: 100%;
+  background: #777777;
 }
 
 .btn {
@@ -88,6 +98,13 @@ body {
 }
 
 header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+header .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,10 +112,11 @@ header {
   min-width: 1400px;
   border-radius: 4px;
   background-color: #373A3C;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
+}
+header .line {
+  height: 3px;
+  position: relative;
+  bottom: 3px;
 }
 
 nav {
