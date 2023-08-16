@@ -7,6 +7,8 @@ $design-lab-height: 480px;
 
 #hero {
     position: relative;
+    display: flex;
+    flex-direction: column;
 
     width: auto;
     height: $hero-height;
@@ -32,6 +34,16 @@ $design-lab-height: 480px;
         
         width: 100%;
         height: 100%;
+    }
+
+    .hero-nav {
+        position: absolute;
+        margin-top: 602px;
+        margin-left: 50%;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
     }
 
     .hero-action {
