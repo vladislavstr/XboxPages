@@ -3,6 +3,7 @@
 $hero-height: 645px;
 $highlights-height: 865px;
 $games-height: 880px;
+$design-lab-height: 480px;
 
 #hero {
     position: relative;
@@ -53,29 +54,30 @@ $games-height: 880px;
             img {
                 margin: 0 57px;
             }
+
             .hero-content {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
             
                 width: 60%;
-            
-                .btn-in-line {
-                    display: flex;
-                    gap: 13px;
-                }
-            
+                
                 .hero-content-offset {
                     display: flex;
                     flex-direction: column;
                     align-content: flex-start;
-            
-                    .btn{
-                        width: 136px;
-                        height: 38px;  
-                        
-                        &.inactive {
-                            width: 146px;
+                    
+                    .btn-in-line {
+                        display: flex;
+                        gap: 13px;
+
+                        .btn{
+                            width: 136px;
+                            height: 38px;  
+                            
+                            &.inactive {
+                                width: 146px;
+                            }
                         }
                     }
                 }
@@ -160,6 +162,7 @@ $games-height: 880px;
             max-width: 278px;
         }
     }
+
     .games-background-image {
         position: absolute;
         
@@ -222,5 +225,65 @@ $games-height: 880px;
 }
 
 #design-lab {
+    position: relative;
+
+    width: auto;
+    height: $design-lab-height;
     
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 24px;
+        max-width: 533px;
+        margin-top: 9px;
+        max-height: 80px ;
+    }
+
+    .design-lab-background-image {
+        position: absolute;
+        
+        object-fit: cover;
+        object-position: top;
+        
+        width: 100%;
+        height: 100%;
+    }
+
+    .design-lab-action {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        height: 100%;
+        background: $background-color-1;
+        
+        .design-lab-content{
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            margin-left: 156px;
+    
+            .btn-in-line {
+                display: flex;
+                gap: 15px;
+
+                margin-top: 37px;
+    
+                .btn{
+                    width: 278px;
+                    height: 60px;  
+                    
+                    &.inactive {
+                        width: 207px;
+                    }
+                }
+            }
+        }
+    }  
 }
