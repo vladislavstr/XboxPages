@@ -13,10 +13,6 @@ body {
   background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
 }
 
-.main {
-  max-width: 1920px;
-}
-
 .circle {
   height: 10px;
   width: 10px;
@@ -116,14 +112,13 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 2;
+  z-index: 1;
 }
 header .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 11px 170px;
-  min-width: 1400px;
   border-radius: 4px;
   background-color: #373A3C;
 }
@@ -218,19 +213,42 @@ footer .footer-bottom .copyright {
 }
 
 @media (min-width: 851px) {
-  .desktop-only {
+  .mobile-only {
     display: none !important;
   }
 }
 @media (max-width: 850px) {
-  .mobile-only {
+  .desktop-only {
     display: none !important;
   }
-  header {
-    padding: 15px 30px;
+  body {
+    padding-top: 39px;
   }
-  header .logo {
-    width: 10px;
+  header {
+    width: 390px;
+  }
+  header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+  }
+  header .header-content nav {
+    margin-left: 10px;
+    gap: 40px;
+  }
+  header .header-content nav .search-txt {
+    width: 140px;
+    height: 25px;
+    padding: 0 5px;
+    border-radius: 4px;
+    border: 1px solid #CCCCCC;
+    font-size: 15px;
+  }
+  header .line {
+    height: 2px;
+    position: relative;
+    bottom: 2px;
   }
 }
 #hero {
@@ -357,6 +375,9 @@ footer .footer-bottom .copyright {
 }
 #games .games-title h1 {
   font-size: 36px;
+}
+#games .card {
+  opacity: 0.9014;
 }
 #games .card-content p {
   font-size: 21px;
