@@ -328,7 +328,7 @@ footer .footer-bottom .copyright {
 #hero .hero-action .hero-control {
   position: relative;
   display: grid;
-  grid-template-columns: 135px 1fr 135px;
+  grid-template-columns: 1fr 10fr 1fr;
   align-items: center;
   grid-column-gap: 157px;
   width: 100%;
@@ -531,37 +531,34 @@ footer .footer-bottom .copyright {
     height: 322.5px;
   }
   #hero h1 {
-    font-size: 18px;
+    font-size: 25.2px;
   }
   #hero h2 {
-    font-size: 12px;
+    font-size: 16.8px;
   }
   #hero p {
-    height: 50px;
-    max-width: 100px;
+    height: 100px;
   }
   #hero .hero-nav {
-    margin-top: 300px;
-    margin-left: 50%;
-    gap: 5px;
+    display: flex;
+    align-self: auto;
+    margin-bottom: 20px;
+    gap: 10px;
   }
   #hero .hero-action .hero-control {
-    max-height: 100px;
-  }
-  #hero .hero-action .hero-control img {
-    margin: 0 57px;
+    display: flex;
   }
   #hero .hero-action .hero-control .hero-content {
-    width: 70%;
+    justify-content: center;
   }
   #hero .hero-action .hero-control .hero-content .hero-content-offset .btn-in-line {
-    gap: 7px;
+    gap: 35px;
   }
   #hero .hero-action .hero-control .hero-content .hero-content-offset .btn-in-line .btn {
-    width: 170px;
-    height: 40px;
+    width: 120px;
+    height: 30px;
   }
   #hero .hero-action .hero-control .hero-content .hero-content-offset .btn-in-line .btn.inactive {
-    width: 175px;
+    width: 125px;
   }
 }/*# sourceMappingURL=main.css.map */
