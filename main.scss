@@ -303,3 +303,69 @@ $design-lab-height: 480px;
         }
     }  
 }
+
+@media (min-width: 851px) {
+    .mobile-only {
+        display: none !important;
+    }
+}
+
+@media (max-width: 850px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    #hero {
+        height: calc($hero-height * 0.5);
+
+        h1 {
+            font-size: calc($standard-font-size * 0.5);
+        }
+    
+        h2 {
+            font-size: calc($small-font-size * 0.5);
+        }
+    
+        p {
+            height: 50px;
+            max-width: 100px;
+        }
+
+        .hero-nav {
+            margin-top: 300px;
+            margin-left: 50%;
+            gap: 5px;
+        }
+    
+        .hero-action {
+    
+            .hero-control {
+                max-height: 100px;
+            
+                img {
+                    margin: 0 57px;
+                }
+    
+                .hero-content {
+                    width: 70%;
+                    
+                    .hero-content-offset {
+                        
+                        .btn-in-line {
+                            gap: 7px;
+    
+                            .btn{
+                                width: 170px;
+                                height: 40px;  
+                                
+                                &.inactive {
+                                    width: 175px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

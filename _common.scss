@@ -298,10 +298,6 @@ footer {
     header{    
         width: 390px;
         .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        
             padding: 5px 15px;
     
             nav {
@@ -313,9 +309,6 @@ footer {
                     height: 25px;
                     padding: 0 5px;
                     
-                    border-radius: $all-border-radius;
-                    border: 1px solid #CCCCCC;
-                    
                     font-size: 15px;
                 }
             }
@@ -323,32 +316,12 @@ footer {
     
         .line {
             height: 2px;
-        
-            position: relative;
             bottom: 2px;
         }
     }
 
     .main {
         max-width: 390px;
-    }
-
-    #hero {
-        // height: calc($hero-height * 0.5);
-        height: 100px;
-
-        h1 {
-            font-size: calc($standard-font-size * 0.5);
-        }
-    
-        h2 {
-            font-size: calc($small-font-size * 0.5);
-        }
-    
-        p {
-            height: 100px;
-            max-width: 300px;
-        }
     }
 
     footer {
