@@ -250,6 +250,59 @@ footer .footer-bottom .copyright {
     position: relative;
     bottom: 2px;
   }
+  .main {
+    max-width: 390px;
+  }
+  #hero {
+    height: 100px;
+  }
+  #hero h1 {
+    font-size: 18px;
+  }
+  #hero h2 {
+    font-size: 12px;
+  }
+  #hero p {
+    height: 100px;
+    max-width: 300px;
+  }
+  footer {
+    height: 100%;
+  }
+  footer h1 {
+    font-size: 10px;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+  footer a {
+    font-size: 7px;
+  }
+  footer span {
+    font-size: 8px;
+  }
+  footer .footer-action {
+    margin-left: 40px;
+    gap: 30px;
+  }
+  footer .footer-action .footer-content .footer-content-link {
+    gap: 5px;
+  }
+  footer .footer-action .footer-content-title {
+    margin-bottom: 10px;
+  }
+  footer .footer-action .footer-icons {
+    margin-left: 50px;
+  }
+  footer .footer-action .footer-icons .icons-inline {
+    gap: 10px;
+  }
+  footer .footer-bottom {
+    margin: 0 20px;
+    margin-top: 15px;
+  }
+  footer .footer-bottom .copyright {
+    margin: 10px 0;
+  }
 }
 #hero {
   position: relative;
