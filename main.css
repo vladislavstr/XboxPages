@@ -11,6 +11,7 @@
 body {
   padding-top: 60px;
   background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+  overflow: hidden;
 }
 
 .circle {
@@ -233,8 +234,33 @@ footer .footer-bottom .copyright {
     padding: 5px 15px;
   }
   header .header-content nav {
-    margin-left: 10px;
-    gap: 40px;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 42px;
+    margin-left: 0px;
+    padding: 7px 10px;
+    background-color: #777777;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    transition: all 0.4s ease;
+    transform: translateY(-100%);
+    transform: translateY(0%);
+  }
+  header .header-content nav .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 7px;
+  }
+  header .header-content nav .nav-link.nonactive {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  header .header-content nav .nav-link + .nav-link {
+    margin-left: 0px;
   }
   header .header-content nav .search-txt {
     width: 140px;
